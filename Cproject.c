@@ -20,8 +20,13 @@ int main ()
     initscr(); // Start ncurses
     int k;
     do{
+<<<<<<< HEAD
     srand(time(NULL));    // srand() function used to initialize or set seeds for rand() function , allowing us to generate                                                   
     paddle p1;               //  different sequence of random numbers.
+=======
+    srand(time(NULL));    // srand() function used to initialize or set seeds for rand() function , allowing us to generate                                                     //  different sequence of random numbers.
+    paddle p1;
+>>>>>>> ef4eaf5cbf3446687f542dedc8f8df0db188fd6d
     paddle p2;
     int max_x, max_y;
     getmaxyx(stdscr, max_y, max_x);      // Figuring out the max dimensions of the terminal.
@@ -42,7 +47,11 @@ int main ()
     d1.dy=(rand() % 2 == 0) ? 1: -1; // if(rand()%2==0){d1.dy=1;} else { d1.dy=-1;}  Known as ternary operator.
     cbreak(); 
     noecho();        //This will make it so that the inputed characters are not shown in window.
+<<<<<<< HEAD
     keypad(stdscr, TRUE);   // This will enable things like function keys , numberpad and things like arrow keys.
+=======
+    keypad(stdscr, TRUE);   // This will enable things like function keys , numberpad and things like aroow keys.
+>>>>>>> ef4eaf5cbf3446687f542dedc8f8df0db188fd6d
     refresh();
     nodelay(stdscr, TRUE);
     refresh();
@@ -137,4 +146,8 @@ int main ()
   // Compile in linux using gcc project_name.c -o project_name -lncurses
   // ./project_name
 
+<<<<<<< HEAD
   // In windows , linux virtual machine or WSL is useful
+=======
+  // In windows , linux virtual machine or WSL is useful
+>>>>>>> ef4eaf5cbf3446687f542dedc8f8df0db188fd6d
