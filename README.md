@@ -2,7 +2,7 @@
 A terminal-based Pong game built in C using ncurses on Linux.
 
 # How To Compile
-gcc Cproject.c -o Cproject -ncurses
+gcc Cproject.c -o Cproject -lncurses
 
 # How To Run
 ./Cproject
